@@ -1,9 +1,20 @@
 body{
     margin: 0;
 }
+h1,h2,p,img{
+    margin: 0;
+    padding: 0;
+}
 
 ul{
 list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (min-width:424px) and (max-width: 767px) {
@@ -20,14 +31,85 @@ list-style: none;
 
  @media screen and (min-width: 1158px) {
 
+    .container{
+        max-width: 1328px;
+    }
+
+    .container.nav{
+        margin-left: 40px;
+        margin-right: 150px;
+    }
+
+    .nav-area{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 16px 0;
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 58px;
+    }
+
      .main.container {
         max-width: 1338px;
-        height: 672px;
         background-image: url(../image/backgr-desck.jpeg);
+        background-size: cover;
         border-radius: 0px 40px 40px 0px;;
      }
-     
+
      .main-content{
         display: flex;
      }
+
+     .spaceman{
+        margin-top: 70px;
+        margin-left: 70px;
+     }
+
+    .container-for-text-and-button{
+        margin-top: 190px;
+        /* margin-bottom: 148px; */
+    }
+
+
+     .paragrapher-error{
+        font-family: 'Lemon', serif;
+        color: #10439C;
+        font-size: 80px;
+        line-height: 1.3;
+     }
+
+    .paragrapher-woops{
+        font-family: 'Poppins', sans-serif;
+        font-size: 56px;
+        color: #0E47A0;
+        line-height: 1.9;
+    }
+
+        .paragrapher-mess{
+            color: #171717;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 22px 0 96px 0;
+            line-height: 1.9;
+        }
+
+        .go-home-bttn{
+            display: flex;
+            width: 240px;
+            height: 50px;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            border: transparent;
+            border-radius: 10px;
+            background: #D72AB0;
+            color: #FFFFFF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            line-height: 1.9;
+        }
     }
