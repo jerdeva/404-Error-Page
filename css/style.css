@@ -1,15 +1,19 @@
 body{
     margin: 0;
 }
-h1,h2,p,img{
+h1,h2,p,img,a{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 ul{
 list-style: none;
 margin: 0;
 padding: 0;
+}
+a{
+    color: #171717;
 }
 
 li{
@@ -52,10 +56,11 @@ li{
     }
 
      .main.container {
-        max-width: 1338px;
+        min-width: 1338px;
         background-image: url(../image/backgr-desck.jpeg);
         background-size: cover;
-        border-radius: 0px 40px 40px 0px;;
+        border-radius: 0px 40px 40px 0px;
+        display: flex;
      }
 
      .main-content{
@@ -112,4 +117,25 @@ li{
             font-size: 20px;
             line-height: 1.9;
         }
+    }
+    section{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    .social{
+        display: flex;
+        margin-left: 40px;
+    }
+    button{
+        cursor: pointer;
+    }
+    button:active{
+        box-shadow: 10px 5px 5px #801c69;
+    }
+
+   
+    a:active{
+                color:  #4a4349a9;
     }
